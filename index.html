@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:regular,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+
+    <title>Form-modal</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+
+            <div class="button">
+                <a href="popup-cons" class="btn popup-link">click me</a>
+            </div>
+
+        </div>
+ 
+    </div>
+
+    <div id="popup-cons" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup">+</a>
+                <div class="popup__form">
+                    <h2>Welcome</h2>
+                    <p>Please complete me</p>
+                    <form action="send-cons.php" class="form-cons" id="form1">
+                        <input class="popup__input" type="text" name="name" placeholder="Your name" required>
+                        <input class="popup__input" type="tel" name="tel" placeholder="Your phone number" required>
+                        <textarea class="popup__textarea" name="message" placeholder="Your message"></textarea>
+                        <button class="popup__btn btn" type="submit">send me</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal-thank" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup">+</a>
+                <div class="popup__form">
+                    <h2>NICE!</h2>
+                    <p>We will call back soon</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
